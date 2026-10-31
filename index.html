@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRC Prompt Generator — The AI GRC Desk</title>
+<meta name="description" content="Pick a GRC workstream, use case and tech stack to get a structured AI prompt, a stack-specific workflow and a governance check.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GRC Prompt Generator — The AI GRC Desk">
+<meta property="og:description" content="Structured AI prompts, stack-specific workflows and governance checks for GRC teams.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c3d2a'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Georgia,serif' font-style='italic'%3EG%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">
+    <div class="header-name">The AI GRC Desk</div>
+    <div class="header-sub">GRC Prompt Generator</div>
+  </div>
+  <div class="header-badge">Beta · Free</div>
+</div>
+
+<div class="main">
+
+  <div class="intro">
+    <div class="intro-title">Build the right prompt for your GRC workflow</div>
+    <div class="intro-desc">Select your workstream, use case, and tech stack. The generator produces a structured prompt, a stack-specific automation workflow, and the governance check — based on where your team is today and what's possible next.</div>
+  </div>
+
+  <div class="steps">
+
+    <!-- Step 1: Workstream -->
+    <div class="step active" id="step1">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-label">Workstream</div>
+        <div class="options-grid" id="workstream-opts"></div>
+      </div>
+    </div>
+
+    <!-- Step 2: Use Case -->
+    <div class="step" id="step2">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-label">Use case</div>
+        <div class="options-grid" id="usecase-opts"></div>
+      </div>
+    </div>
+
+    <!-- Step 3: Tech Stack -->
+    <div class="step" id="step3">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-label">Your tech stack — select all that apply</div>
+        <div class="stack-grid" id="stack-opts"></div>
+        <button class="generate-btn" id="generate-btn" disabled>
+          Generate prompt + workflow →
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Output -->
+  <div class="output-panel" id="output-panel"></div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
