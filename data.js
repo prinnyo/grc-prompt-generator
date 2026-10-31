@@ -102,7 +102,7 @@ const DATA = {
   // Email capture. Until embedUrl is set, the subscribe button links to pageUrl (your hosted Beehiiv page).
   // To show the form inline, paste the iframe src from Beehiiv's embed code (https://embeds.beehiiv.com/...).
   subscribe: {
-    pageUrl: 'https://theaigrcdesk.beehiiv.com/subscribe',
+    pageUrl: 'https://aigrcdesk.com/subscribe',
     embedUrl: '',
     embedHeight: 320
   },
